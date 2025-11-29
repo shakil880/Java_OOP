@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java OOP Learning Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-coffee"></i>
+                <h1>Java OOP</h1>
+                <p>Complete Learning Course</p>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search topics...">
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <div class="nav-section">
+                    <h3>Fundamentals</h3>
+                    <a href="#" class="nav-item active" data-page="01">
+                        <span class="nav-number">01</span>
+                        <span class="nav-title">Java OOP Introduction</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="02">
+                        <span class="nav-number">02</span>
+                        <span class="nav-title">Classes & Objects</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="03">
+                        <span class="nav-number">03</span>
+                        <span class="nav-title">Class Attributes</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="04">
+                        <span class="nav-number">04</span>
+                        <span class="nav-title">Class Methods</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="05">
+                        <span class="nav-number">05</span>
+                        <span class="nav-title">Constructors</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Core Concepts</h3>
+                    <a href="#" class="nav-item" data-page="06">
+                        <span class="nav-number">06</span>
+                        <span class="nav-title">this Keyword</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="07">
+                        <span class="nav-number">07</span>
+                        <span class="nav-title">Modifiers</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="08">
+                        <span class="nav-number">08</span>
+                        <span class="nav-title">Encapsulation</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="09">
+                        <span class="nav-number">09</span>
+                        <span class="nav-title">Packages & API</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="10">
+                        <span class="nav-number">10</span>
+                        <span class="nav-title">Inheritance</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Advanced Topics</h3>
+                    <a href="#" class="nav-item" data-page="11">
+                        <span class="nav-number">11</span>
+                        <span class="nav-title">Polymorphism</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="12">
+                        <span class="nav-number">12</span>
+                        <span class="nav-title">super Keyword</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="13">
+                        <span class="nav-number">13</span>
+                        <span class="nav-title">Inner Classes</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="14">
+                        <span class="nav-number">14</span>
+                        <span class="nav-title">Abstraction</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="15">
+                        <span class="nav-number">15</span>
+                        <span class="nav-title">Interface</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="16">
+                        <span class="nav-number">16</span>
+                        <span class="nav-title">Enums</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Practical Applications</h3>
+                    <a href="#" class="nav-item" data-page="17">
+                        <span class="nav-number">17</span>
+                        <span class="nav-title">User Input</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="18">
+                        <span class="nav-number">18</span>
+                        <span class="nav-title">Date & Time</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="19">
+                        <span class="nav-number">19</span>
+                        <span class="nav-title">ArrayList</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="20">
+                        <span class="nav-number">20</span>
+                        <span class="nav-title">HashMap</span>
+                        <span class="progress-dot"></span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="progress-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Progress</span>
+                        <span class="stat-value" id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-left">
+                    <button class="btn-icon" id="toggleSidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 id="pageTitle">Java OOP Introduction</h2>
+                </div>
+                <div class="header-right">
+                    <button class="btn-icon" id="toggleTheme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn-icon" id="printPage">
+                        <i class="fas fa-print"></i>
+                    </button>
+                    <button class="btn-primary" id="openFolderBtn">
+                        <i class="fas fa-folder-open"></i>
+                        Open Folder
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-body" id="contentBody">
+                <!-- Content will be loaded here -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading content...</p>
+                </div>
+            </div>
+
+            <footer class="content-footer">
+                <button class="btn-nav" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                <button class="btn-mark" id="markCompleteBtn">
+                    <i class="fas fa-check"></i>
+                    Mark as Complete
+                </button>
+                <button class="btn-nav" id="nextBtn">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
